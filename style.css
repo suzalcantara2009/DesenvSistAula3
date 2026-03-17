@@ -17,15 +17,15 @@ p {
 }
 
 
-
+/*tudo*/
 .perfil{
     width:350px;
     background: 
-        linear-gradient(white) padding-box,
+        linear-gradient(white) padding-box, /*tdç caixa de preenchimento*/
         linear-gradient(180deg, #e1306c, #833ab4, #F56040, #405DE6) border-box;
     border:5px solid transparent;
     padding:20px;
-    margin:40px auto;
+    margin: 40px;
     border-radius: 5%;
  
 }
@@ -40,7 +40,6 @@ p {
     background:
         linear-gradient(white ) padding-box,
         linear-gradient(180deg, #e1306c, #833ab4, #F56040, #405DE6) border-box;
-
     border-radius:50%;
 }
 
@@ -64,39 +63,36 @@ p {
     border-bottom:1px solid #ccc;
 
     /*para anular o padding colocado em perfil*/
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -20px; /*parte esquerda*/
+    margin-right: -20px; 
 }
 
-/*colocar linhas/div entre as informações*/
+/*colocar linhas/div | entre as informações*/
 .infos div{
-    padding-inline-end: 40px;
+    padding-inline-end: 40px;  /*tdç preenchimento de linha final*/
     padding-inline-start: 26px;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #ccc; /*borda a direita*/
 }
 
-/*pra tirar linha da coluna do último*/
-.infos div:last-child{
+/*pra tirar linha da coluna do último, "se liga a .infos div anterior*/
+.infos div:last-child{ /*ultima divisão decoisa*/
+
     border-right:none;
 }
 
 .infos strong{
     font-size: 1.2rem;
 }
-.posts{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
 
+.posts{
+    justify-content:center;
 }
 
 .post{ /*iamgens*/
-    width:100px;
-    height:120px;
-    margin:1px;
-    flex: 0; /*colunas  largura  */
+    width:100px; /*largura*/
+    height:120px; /*altura*/
+    margin: 1px;
     padding: 5px;
     border-radius: 8%;
-
 }
 
