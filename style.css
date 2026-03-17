@@ -1,14 +1,29 @@
-    body{
-    background-color:#f2f2f2;
+body{
+    background-color:#e0dede;
     font-family: Arial;
     text-align:center;
 }
+/* Nome */
+h1{
+    color:#000000;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-inline-start: 6px;
+}
+
+
+p {
+    font-size: 0.8rem;
+}
+
 
 
 .perfil{
     width:350px;
-    background-color:white;
-    border:3px solid #ff005d;
+    background: 
+        linear-gradient(white) padding-box,
+        linear-gradient(180deg, #e1306c, #833ab4, #F56040, #405DE6) border-box;
+    border:5px solid transparent;
     padding:20px;
     margin:40px auto;
     border-radius: 5%;
@@ -19,57 +34,69 @@
 .foto{
     width:120px;
     height:120px;
-    border:3px solid #ff4da6;
-    border-radius:50%;
-}
+    padding: 6px;
+    border:3px solid transparent;
+    
+    background:
+        linear-gradient(white ) padding-box,
+        linear-gradient(180deg, #e1306c, #833ab4, #F56040, #405DE6) border-box;
 
-/* Nome */
-h1{
-    color:#333333;
+    border-radius:50%;
 }
 
 
 .bio{
-    color:#666666;
+    color:#2c1c1c;
     margin:10px;
+    text-align: justify;
 }
 
 
 .infos{
-    background-color:#fafafa;
-    border:1px solid #e7e3e3;
-    padding:10px;
-    
-
+    background-color:#ffffff;
+    padding:15px;
     display: flex;
-    justify-content: space-between; /* Ou usar gap*/
-    align-items: center;
-    margin: 10px 0;
+    text-align: center;
     font-size: 1rem;
+
+    
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+
+    /*para anular o padding colocado em perfil*/
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
+/*colocar linhas/div entre as informações*/
+.infos div{
+    padding-inline-end: 40px;
+    padding-inline-start: 26px;
+    border-right: 1px solid #ccc;
+}
 
+/*pra tirar linha da coluna do último*/
+.infos div:last-child{
+    border-right:none;
+}
+
+.infos strong{
+    font-size: 1.2rem;
+}
 .posts{
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
+
 }
 
-
-.post{
+.post{ /*iamgens*/
     width:100px;
     height:120px;
     margin:1px;
     flex: 0; /*colunas  largura  */
     padding: 5px;
+    border-radius: 8%;
+
 }
 
-.coluna {
-    display: center;
-    gap: 15px; /* Espaçamento entre colunas */
-}
-
-p {
-    font-size: 0.8rem;
-    display: 
-}
